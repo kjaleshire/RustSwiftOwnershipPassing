@@ -12,8 +12,7 @@
 		2B4A348E1C72D08A004F0532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A348C1C72D08A004F0532 /* Main.storyboard */; };
 		2B4A34901C72D08A004F0532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A348F1C72D08A004F0532 /* Assets.xcassets */; };
 		2B4A34931C72D08A004F0532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A34911C72D08A004F0532 /* LaunchScreen.storyboard */; };
-		2B4A349E1C72D08A004F0532 /* RustOwnershipPassingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A349D1C72D08A004F0532 /* RustOwnershipPassingTests.swift */; };
-		2B4A34A91C72D08A004F0532 /* RustOwnershipPassingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A34A81C72D08A004F0532 /* RustOwnershipPassingUITests.swift */; };
+		2B4A34C31C7440A1004F0532 /* libownership_passing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4A34C21C7440A1004F0532 /* libownership_passing.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +41,10 @@
 		2B4A34921C72D08A004F0532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B4A34941C72D08A004F0532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B4A34991C72D08A004F0532 /* RustOwnershipPassingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RustOwnershipPassingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B4A349D1C72D08A004F0532 /* RustOwnershipPassingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustOwnershipPassingTests.swift; sourceTree = "<group>"; };
-		2B4A349F1C72D08A004F0532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B4A34A41C72D08A004F0532 /* RustOwnershipPassingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RustOwnershipPassingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B4A34A81C72D08A004F0532 /* RustOwnershipPassingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustOwnershipPassingUITests.swift; sourceTree = "<group>"; };
-		2B4A34AA1C72D08A004F0532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4A34B61C72D147004F0532 /* RustOwnershipPassing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RustOwnershipPassing-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B4A34B71C72D16E004F0532 /* ownership_passing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ownership_passing.h; sourceTree = "<group>"; };
+		2B4A34C21C7440A1004F0532 /* libownership_passing.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libownership_passing.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4A34C31C7440A1004F0532 /* libownership_passing.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				2B4A34871C72D08A004F0532 /* RustOwnershipPassing */,
-				2B4A349C1C72D08A004F0532 /* RustOwnershipPassingTests */,
-				2B4A34A71C72D08A004F0532 /* RustOwnershipPassingUITests */,
 				2B4A34861C72D08A004F0532 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,32 +94,17 @@
 		2B4A34871C72D08A004F0532 /* RustOwnershipPassing */ = {
 			isa = PBXGroup;
 			children = (
+				2B4A34C21C7440A1004F0532 /* libownership_passing.a */,
 				2B4A34881C72D08A004F0532 /* AppDelegate.swift */,
 				2B4A348A1C72D08A004F0532 /* ViewController.swift */,
 				2B4A348C1C72D08A004F0532 /* Main.storyboard */,
 				2B4A348F1C72D08A004F0532 /* Assets.xcassets */,
 				2B4A34911C72D08A004F0532 /* LaunchScreen.storyboard */,
 				2B4A34941C72D08A004F0532 /* Info.plist */,
+				2B4A34B61C72D147004F0532 /* RustOwnershipPassing-Bridging-Header.h */,
+				2B4A34B71C72D16E004F0532 /* ownership_passing.h */,
 			);
 			path = RustOwnershipPassing;
-			sourceTree = "<group>";
-		};
-		2B4A349C1C72D08A004F0532 /* RustOwnershipPassingTests */ = {
-			isa = PBXGroup;
-			children = (
-				2B4A349D1C72D08A004F0532 /* RustOwnershipPassingTests.swift */,
-				2B4A349F1C72D08A004F0532 /* Info.plist */,
-			);
-			path = RustOwnershipPassingTests;
-			sourceTree = "<group>";
-		};
-		2B4A34A71C72D08A004F0532 /* RustOwnershipPassingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2B4A34A81C72D08A004F0532 /* RustOwnershipPassingUITests.swift */,
-				2B4A34AA1C72D08A004F0532 /* Info.plist */,
-			);
-			path = RustOwnershipPassingUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,21 +170,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Kyle J Aleshire";
 				TargetAttributes = {
 					2B4A34841C72D08A004F0532 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = WQ3KE8U988;
+						LastSwiftMigration = 0800;
 					};
 					2B4A34981C72D08A004F0532 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = WQ3KE8U988;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2B4A34841C72D08A004F0532;
 					};
 					2B4A34A31C72D08A004F0532 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = WQ3KE8U988;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2B4A34841C72D08A004F0532;
 					};
 				};
@@ -268,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4A349E1C72D08A004F0532 /* RustOwnershipPassingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4A34A91C72D08A004F0532 /* RustOwnershipPassingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +311,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -373,8 +358,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -393,6 +380,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -404,8 +392,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RustOwnershipPassing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RustOwnershipPassing",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kja.RustOwnershipPassing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RustOwnershipPassing/RustOwnershipPassing-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -415,8 +409,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RustOwnershipPassing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RustOwnershipPassing",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kja.RustOwnershipPassing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RustOwnershipPassing/RustOwnershipPassing-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -428,6 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kja.RustOwnershipPassingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RustOwnershipPassing.app/RustOwnershipPassing";
 			};
 			name = Debug;
@@ -440,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kja.RustOwnershipPassingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RustOwnershipPassing.app/RustOwnershipPassing";
 			};
 			name = Release;
@@ -451,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kja.RustOwnershipPassingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = RustOwnershipPassing;
 				USES_XCTRUNNER = YES;
 			};
@@ -463,6 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kja.RustOwnershipPassingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = RustOwnershipPassing;
 				USES_XCTRUNNER = YES;
 			};
@@ -487,6 +491,7 @@
 				2B4A34AF1C72D08A004F0532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B4A34B01C72D08A004F0532 /* Build configuration list for PBXNativeTarget "RustOwnershipPassingTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				2B4A34B21C72D08A004F0532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B4A34B31C72D08A004F0532 /* Build configuration list for PBXNativeTarget "RustOwnershipPassingUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				2B4A34B51C72D08A004F0532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
