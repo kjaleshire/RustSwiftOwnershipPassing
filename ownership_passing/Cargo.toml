@@ -1,0 +1,11 @@
+[package]
+name = "ownership_passing"
+version = "0.1.0"
+authors = ["Kyle Aleshire <kjaleshire@gmail.com>"]
+
+[dependencies]
+libc = "0.2.7"
+
+[lib]
+name = "ownership_passing"
+crate-type = ["staticlib"]
